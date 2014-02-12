@@ -7,6 +7,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{A Lita handler to check the current BTC/USD exchange rate}
   spec.homepage      = "https://github.com/marceldegraaf/lita-bitcoin"
   spec.license       = "MIT"
+  spec.metadata      = { lita_plugin_type: "handler" }
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
